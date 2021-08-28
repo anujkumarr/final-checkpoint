@@ -1,0 +1,164 @@
+.bars{
+  display: none;
+
+}
+#toggle{
+  display: none;
+}
+.header{
+  background-color: $tirtiary;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 1rem 0 ;
+  box-shadow: 10px 0.1px 4px 0.1px rgb(122, 116, 116);
+  z-index: 99;
+}
+.logo a{
+  color: $tirtiary;
+  font-size: 2rem;
+  background-color: $secondary;
+  padding: 1rem;
+  font-weight: bolder;
+  clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+}
+
+#loading {
+		animation: rotation 2s infinite linear;
+    
+}
+
+@keyframes rotation {
+		from {
+			transform: rotate(0deg);
+      
+		}
+		to {
+				transform: rotateY(360deg);   
+		}
+}
+
+// nav & underbar
+.navigation{
+  position: relative;
+}
+
+.ul-list{
+ a{
+   color: $primary;
+   font-size: 1.2rem;
+   font-weight: bolder;
+   margin-right: 1.5rem;
+ } 
+ a:focus{
+   color: rgba(0, 50, 107, 0.8);
+ }
+
+}
+
+.ul-list {
+  position: absolute;
+  right: 0px;
+  top: 20px;
+  .underbar {
+  height: 5px;
+  top: 30px;
+  position: absolute;
+  transition: 0.5s ease;
+}
+}
+
+.li-item {
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.li-item:nth-of-type(1):hover ~ .underbar {
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background: rgb(246, 109, 109);
+}
+.li-item:nth-of-type(2):hover ~ .underbar {
+  left: 16%;
+  width: 60px;
+  height: 3px;
+  background: rgb(2, 245, 2);
+}
+.li-item:nth-of-type(3):hover ~ .underbar {
+  left: 31%;
+  width: 60px;
+  height: 3px;
+  background: orange;
+}
+.li-item:nth-of-type(4):hover ~ .underbar {
+  left: 47%;
+  width: 55px;
+  height: 3px;
+  background: rgb(246, 0, 0);
+}
+.li-item:nth-of-type(5):hover ~ .underbar {
+  left: 62%;
+  width: 70px;
+  height: 3px;
+  background: rgb(0, 202, 224);
+}
+
+.li-item:nth-of-type(6):hover ~ .underbar {
+  left: 80%;
+  width: 75px;
+  height: 3px;
+  background: rgb(92, 39, 39);
+}
+
+
+// media queries header
+
+@media screen and (max-width:768px) {
+  html{
+    font-size: 9px;
+  }
+  .container{
+      max-width: 800px;
+      margin: 0 auto;
+      width: 90%;
+    }
+
+.rotation{
+  z-index: 999;
+}
+.underbar{
+  display: none;
+}
+.li-item{
+  margin: 3rem 0rem;
+  a{
+    color: rgb(0, 0, 0);
+  }
+}
+.bars{
+ display: block;
+ z-index: 99;
+ position: relative;
+ top: 30%;
+}
+.navigation .ul-list{
+  display: none;
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  background-color: rgba(155, 151, 151, 0.658);
+  li{
+    position: relative;
+    top: 35%;
+    left: 45%;
+  }
+
+  }
+
+  #toggle:checked ~ .ul-list{
+    display: block;
+  }
+
+}

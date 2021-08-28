@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/bfdf924193.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/stylesheets/style.css">
+  <title>Portfolio</title>
+</head>
+<body>
+  <header class="header">
+    <section class="container flex space-bw header-text">
+      <div class="logo rotation">
+         <a id="loading" href="#">A</a>
+      </div>
+      <!-- nav bar -->
+      <nav class="navigation ">
+        <label class="bars" for="toggle">
+          <i class="fas fa-bars"></i>
+        </label>
+        <input id="toggle" type="checkbox">
+        <ul class="flex ul-list flex-40">
+          <li class="li-item">
+           <a href="#">Home</a>
+          </li>
+          <li class="li-item">
+            <a href="#about">About</a>
+          </li>
+          <li class="li-item">
+            <a href="#skills">Skills</a>
+          </li>
+          <li class="li-item">
+            <a href="https://akk26.medium.com/" target="_blank">Blogs</a>
+          </li>
+          <li class="li-item">
+            <a href="#contact">Contact</a>
+          </li>
+          <li class="li-item">
+            <a href="projects.html">Projects</a>
+          </li>
+          <div class="underbar"></div>
+        </ul>
+      </nav>
+    </section> 
+  </header>
+
+  <!-- main section -->
+  <main>
+    <!-- hero section -->
+    <section id="top" class="container">
+      <article class=" flex space-bw align-center hero-height column-2">
+        <div class="hero flex-50">
+          <h5>Hello!  I am</h5>
+          <h1>Anuj Kumar</h1>
+          <h4>Learning full stack web development <a class="campus" href="https://altcampus.io/" target="_blank">@altCampus</a></h5>
+            <!-- down button -->
+          <div class="arrow bounce">
+            <a class="fa fa-arrow-down fa-2x" href="#about"></a>
+          </div>  
+        </div>
+        <div class="flex-50">
+          <img class="hero-img" src="./assets/media/Computer_04-removebg-preview.png" alt="hero">
+        </div>
+      </article>
+    </section> 
+   
+    <!-- about -->
+    <section id="about" class="container">
+      <article class="flex  about  align-center  space-bw column-2">
+        <div class="about-para flex-50">
+          <p>
+          Hello folks! I am Anuj Kumar, a pharmacist now working on Web Development.I completed my graduation in 2017 from JNU Jaipur (Rajashthan). After working in the Pharmaceutical domain, I have switched to the Tech domain, where I find working on development highly satisfying. In pursuit of this, I joined AltCampus in April 2021 to learn development skills and programming, and currently I am enjoying my chosen path. I aspire to build full-stack web applications and contribute to the developer community. 
+          </p>
+        </div>
+        <div class="self flex-40">
+         <img src="./assets/media/self.JPG"  alt="self-image">
+        </div>
+        <p class="about-me flex-10">About me</p>
+      </article>  
+    </section>
+
+     <!-- skills section -->
+    <section id="skills" class="container skills">
+      <div class="flex">
+        <div class="flex-40 skill-one">
+          <label class="progress-label" for="file">HTML</label>
+          <progress class="progress"  id="file" max="100" value="90"> 90% </progress>
+          <span class="percentage">90%</span>
+        </div>
+        
+        <div class="flex-40 skill-one">
+          <label class="progress-label" for="file">CSS</label>
+          <progress class="progress"  id="file" max="100" value="80">80%</progress>
+          <span class="percentage">80%</span>
+        </div>  
+        <p class="my-skills flex-10">My skills</p>
+      </div>
+      
+     <div class="flex">
+        <div class="flex-40 skill-one">
+          <label class="progress-label" for="file">JavaScript</label>
+          <progress class="progress"  id="file" max="100" value="40"> 40% </progress>
+          <span class="percentage">40%</span>
+        </div>
+        
+        <div class="flex-40 skill-one">
+          <label class="progress-label" for="file">SCSS</label>
+          <progress class="progress"  id="file" max="100" value="70">80%</progress>
+          <span class="percentage">80%</span>
+        </div>  
+      </div>
+      
+    </section>
+
+
+
+    <!-- contact -->
+    <section id="contact" class="container">
+      <div class="flex input-contact space-bw column-2">
+        <div class="flex-50 input-border">
+          <h4>Say hello..</h4>
+          <form>
+            <input type="text" placeholder="Your Name"> 
+            <input type="email" placeholder="Your Email">
+            <textarea name="text" id="text" cols="30" rows="4" placeholder="Write your message"></textarea>
+          </form>
+          <a class="btn btn-secondary" href="#">Send</a>
+        </div>
+
+        <div class="flex-40 contact">
+          <p>I am interested in working with any company that thinks my skill will be helpful for them. If you are looking for someone like me, please let me know. Or you can just 'say hi' to me.</p>
+          <div class="flex phone">
+            <i class="fas fa-phone-alt contact-symbol"></i>
+            <p>918619226418</p>
+          </div>
+
+          <div class="flex envelope">
+            <i class="fas fa-envelope contact-symbol"></i>
+            <a class="mail" href = "mailto: anujbph@gmail.com">anujbph@gmail.com</a>
+          </div>
+        </div>
+
+        <div class="follow flex-10">
+          <nav>
+            <ul class="follow-ul flex column flex-row">
+              <li>
+                <a href="https://github.com/anujkumarr" target="_blank">
+                  <i class="fab fa-github"></i>
+                </a> 
+              </li>
+               <li>
+                <a href=https://akk26.medium.com/ target="_blank">
+                 <i class="fab fa-medium"></i>
+                </a> 
+              </li>
+              <li>
+                <a href="https://twitter.com/_anujkumarr" target="_blank"><i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/anuj-kumar-771227119/" target="_blank">
+                  <i class="fab fa-linkedin"></i>
+                </a>
+              </li>
+              <p>follow me</p>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </section>    
+  </main>
+
+  <!-- footer -->
+  <footer class="footer">
+    <section class="container">
+      <p class="footer-text">Made with <i class="heart fas fa-heart"></i> </p>
+      <p class="copyright"><small>&copy 2021 Anuj Kumar. All rights reserved.</small></p>
+      <div class="arrow bounce bottom">
+        <a class="fa fa-arrow-up fa-2x" href="#top"></a>
+      </div>  
+    </section>
+  </footer>
+</body>
+</html>
+
+
+
+
+
