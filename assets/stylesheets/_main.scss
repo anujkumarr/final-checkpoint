@@ -2,6 +2,7 @@
 .hero-height{
   margin: auto;
   margin-top: 10rem;
+
 }
 .hero{
   h5{
@@ -75,9 +76,9 @@
 .about-para p{
   font-size: 1rem;
   word-spacing: 0.1rem;
-  line-height: 2rem;
+  line-height: 1.5rem;
   color: $primary;
-  font-weight: 600;
+  font-weight: lighter;
 }
 .self{
   width: 100%;
@@ -253,23 +254,32 @@ label{
 // media queries 940px
 @media screen and(max-width:940px){
   html{
-    font-size: 10px;
+    font-size: 14px;
   }
   .container{
     max-width: 1020px;
     width: 90%;
     margin: 0 auto;
   }
+  .about-me{
+    right: -8%;
+  }
+  .my-skills{
+    right: -8%;
+  }
 }
 // 768px
   @media screen and(max-width:768px) {
     html{
-      font-size: 9px;
+      font-size: 12px;
     }
     .container{
       max-width: 800px;
       margin: 0 auto;
       width: 90%;
+    }
+    .hero-img{
+      margin-top: -50px;
     }
     .flex-50{
       flex: 0 1 100%;
@@ -285,11 +295,13 @@ label{
 
     }
     .about{
+      padding: 2rem 0rem;
       position: relative;
     }
     .about-para{
       p{
         margin-left: 2rem;
+        font-weight: lighter;
       }
     }
     .self{
@@ -298,10 +310,10 @@ label{
       }
     }
     .about-me{
-      width: 15%;
+      width: 18%;
       position: absolute;
       left: -6rem;
-      top: 8.5rem;
+      top: 6rem;
       text-align: center;
     }     
     .my-skills{
@@ -328,45 +340,49 @@ label{
     }
   }
 
-  @media screen and(max-width:620px) {
+  @media screen and(max-width:665px) {
     html{
-      font-size: 6px;
+      font-size: 11px;
     }
-    .about-me{
-      width: 12%;
-      position: absolute;
-      left: -5rem;
-      top: 9rem;
-      text-align: center;
-    }  
-    .my-skills{
-      right: 2%;
-    }
-  }
-  @media screen and (max-width:515px){
-    html{
-      font-size: 7px;
-    }
-    .about-me{
-      font-size: 6px;
-      width: 15%;
-      position: absolute;
-      left: -5rem;
-      top: 11rem;
-      text-align: center;
-    } 
-     .my-skills{
-      right: -5%;
-    }
-  }
-
-  @media screen and (max-width:400px){
     .about-me{
       width: 18%;
       position: absolute;
+      left: -5rem;
+      top: 5rem;
+      text-align: center;
+    }  
+    .my-skills{
+      right: -5%;
+    }
+  }
+  @media screen and (max-width:610px){
+    html{
+      font-size: 10px;
+    }
+    .about-me{
+      // font-size: 8px;
+      width: 18%;
+      position: absolute;
+      left: -4.5rem;
+      top: 5rem;
+      text-align: center;
+    } 
+     .my-skills{
+      right: -7%;
+    }
+  }
+
+  @media screen and (max-width:550px){
+    .about-me{
+      font-size: 10px;
+      width: 18%;
+      position: absolute;
       left: -4rem;
-      top: 11rem;
+      top: 6rem;
       text-align: center;
       font-size: 6px;
     } 
+    .my-skills{
+      right: -11%;
+    }
   }
