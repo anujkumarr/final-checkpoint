@@ -88,8 +88,10 @@
   border-radius: 2rem;
   margin-left: 2rem;
   filter: grayscale(60%);
+  transition: all 0.5s ease-out;
   &:hover{
     filter: grayscale(0%);
+    transform: scale(1.1);
   }
 }
 .about-me{
@@ -278,6 +280,9 @@ label{
       margin: 0 auto;
       width: 90%;
     }
+    .hero-height{
+      padding-top: 2rem;
+    }
     .hero-img{
       margin-top: -50px;
     }
@@ -302,6 +307,7 @@ label{
       p{
         margin-left: 2rem;
         font-weight: lighter;
+        line-height: 20px;
       }
     }
     .self{

@@ -57,16 +57,37 @@
    }
   }
 
+  @media screen and (max-width: 980px){
+    .flex-30{
+      flex: 0 1 50%;
+    }
+    .live-btn{
+      width: 25%;
+    }
+    .column-2{
+      flex-direction: column;
+    }
+    .live-btn-small{
+      width: 25%;
+    }
+    .img-div{
+      margin-top: 20px !important;
+    }
+  }
   
   @media screen and (max-width:768px){
     .flex-30{
       flex: 0 1 50%;
     }
     .live-btn{
-      width: 32%;
+      width: 25%;
     }
     .live-btn-small{
-      width: 15%;
+      width: 25%;
     }
-   
+    .img-div{
+      margin-top: 20px !important;
+    }
   }
+
+  
