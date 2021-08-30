@@ -253,10 +253,10 @@ label{
 
 
 
-// media queries 940px
-@media screen and(max-width:940px){
+// media queries 950px
+@media screen and(max-width:975px){
   html{
-    font-size: 14px;
+    font-size: 12px;
   }
   .container{
     max-width: 1020px;
@@ -264,11 +264,42 @@ label{
     margin: 0 auto;
   }
   .about-me{
-    right: -8%;
+    top: 7rem;
+    right: -10%;
+  }
+  .about-para {
+   p{
+    line-height: 25px;
+    margin-top: -2rem;
+   } 
+  }
+  .self{
+    img{
+      margin-top: 20px;
+    }
+  }
+  .skills{
+    margin: -100px 0px;
   }
   .my-skills{
     right: -8%;
   }
+  .flex-row{
+      flex-direction: row;
+      li{
+        margin-right: 2rem;
+        margin-left: -10px;
+      }
+    }
+    .follow{
+      p{
+        display: none;
+      }
+    }
+    .contact{
+      margin-top: 2rem;
+    }
+    
 }
 // 768px
   @media screen and(max-width:768px) {
@@ -319,7 +350,7 @@ label{
       width: 18%;
       position: absolute;
       left: -6rem;
-      top: 6rem;
+      top: 3rem;
       text-align: center;
     }     
     .my-skills{
